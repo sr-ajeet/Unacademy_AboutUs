@@ -1,129 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-10-06T09:38:28 IST" name="Default suite" finished-at="2026-10-06T09:41:58 IST" duration-ms="209729">
+  <suite started-at="2026-10-08T10:07:56 IST" name="Default suite" finished-at="2026-10-08T10:08:21 IST" duration-ms="25519">
     <groups>
     </groups>
-    <test started-at="2026-10-06T09:38:28 IST" name="Default test" finished-at="2026-10-06T09:41:58 IST" duration-ms="209729">
+    <test started-at="2026-10-08T10:07:56 IST" name="Default test" finished-at="2026-10-08T10:08:21 IST" duration-ms="25519">
       <class name="tests.AboutUsTest">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.AboutUsTest@702657cc]" started-at="2026-10-06T09:38:28 IST" name="beforeMethod" finished-at="2026-10-06T09:38:44 IST" duration-ms="15994" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.AboutUsTest@292b08d6]" started-at="2026-10-08T10:07:56 IST" name="beforeMethod" finished-at="2026-10-08T10:08:06 IST" duration-ms="10016" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="validateAboutUsPageContent()[pri:1, instance:tests.AboutUsTest@702657cc]" started-at="2026-10-06T09:38:44 IST" name="validateAboutUsPageContent" description="TC047 - Validate that the About Us page displays company information, mission, and services correctly" finished-at="2026-10-06T09:38:47 IST" duration-ms="3104" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateAboutUsPageContent -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.AboutUsTest@702657cc]" started-at="2026-10-06T09:38:48 IST" name="afterMethod" finished-at="2026-10-06T09:38:48 IST" duration-ms="532" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.AboutUsTest@702657cc]" started-at="2026-10-06T09:38:48 IST" name="beforeMethod" finished-at="2026-10-06T09:38:58 IST" duration-ms="9453" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="validateAboutUsResponsiveness()[pri:2, instance:tests.AboutUsTest@702657cc]" started-at="2026-10-06T09:38:58 IST" name="validateAboutUsResponsiveness" description="TC048 - Validate About Us page responsiveness across desktop, tablet, and mobile viewports" finished-at="2026-10-06T09:39:03 IST" duration-ms="5625" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateAboutUsResponsiveness -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.AboutUsTest@702657cc]" started-at="2026-10-06T09:39:04 IST" name="afterMethod" finished-at="2026-10-06T09:39:04 IST" duration-ms="647" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.AboutUsTest@702657cc]" started-at="2026-10-06T09:39:04 IST" name="beforeMethod" finished-at="2026-10-06T09:39:16 IST" duration-ms="11664" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="validateAboutUsPerformance()[pri:3, instance:tests.AboutUsTest@702657cc]" started-at="2026-10-06T09:39:16 IST" name="validateAboutUsPerformance" description="TC049 - Validate About Us page load performance meets acceptable response time" finished-at="2026-10-06T09:39:20 IST" duration-ms="3909" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateAboutUsPerformance -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.AboutUsTest@702657cc]" started-at="2026-10-06T09:39:20 IST" name="afterMethod" finished-at="2026-10-06T09:39:21 IST" duration-ms="691" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.AboutUsTest@702657cc]" started-at="2026-10-06T09:39:21 IST" name="beforeMethod" finished-at="2026-10-06T09:39:36 IST" duration-ms="14754" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="validateMissionAndVisionSection()[pri:4, instance:tests.AboutUsTest@702657cc]" started-at="2026-10-06T09:39:36 IST" name="validateMissionAndVisionSection" description="TC050 - Validate Mission and Vision section is displayed with correct content" finished-at="2026-10-06T09:39:40 IST" duration-ms="4286" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateMissionAndVisionSection -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.AboutUsTest@702657cc]" started-at="2026-10-06T09:39:40 IST" name="afterMethod" finished-at="2026-10-06T09:39:41 IST" duration-ms="690" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.AboutUsTest@702657cc]" started-at="2026-10-06T09:39:41 IST" name="beforeMethod" finished-at="2026-10-06T09:39:57 IST" duration-ms="16151" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="validateAchievementsSection()[pri:5, instance:tests.AboutUsTest@702657cc]" started-at="2026-10-06T09:39:57 IST" name="validateAchievementsSection" description="TC051 - Validate Company Achievements section is displayed successfully" finished-at="2026-10-06T09:40:04 IST" duration-ms="6936" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateAchievementsSection -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.AboutUsTest@702657cc]" started-at="2026-10-06T09:40:05 IST" name="afterMethod" finished-at="2026-10-06T09:40:05 IST" duration-ms="655" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.AboutUsTest@702657cc]" started-at="2026-10-06T09:40:05 IST" name="beforeMethod" finished-at="2026-10-06T09:40:14 IST" duration-ms="8597" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="validateCurrentOpeningsSection()[pri:6, instance:tests.AboutUsTest@702657cc]" started-at="2026-10-06T09:40:14 IST" name="validateCurrentOpeningsSection" description="TC052 - Validate Current Openings section displays available job opportunities" finished-at="2026-10-06T09:40:31 IST" duration-ms="16785" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateCurrentOpeningsSection -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.AboutUsTest@702657cc]" started-at="2026-10-06T09:40:31 IST" name="afterMethod" finished-at="2026-10-06T09:40:31 IST" duration-ms="592" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.AboutUsTest@702657cc]" started-at="2026-10-06T09:40:31 IST" name="beforeMethod" finished-at="2026-10-06T09:40:45 IST" duration-ms="13309" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="validateJobApplicationRedirection()[pri:7, instance:tests.AboutUsTest@702657cc]" started-at="2026-10-06T09:40:45 IST" name="validateJobApplicationRedirection" description="TC053 - Validate Apply action redirects the user to the job application page" finished-at="2026-10-06T09:41:05 IST" duration-ms="20134" status="PASS">
+        <test-method signature="validateJobApplicationRedirection()[pri:7, instance:tests.AboutUsTest@292b08d6]" started-at="2026-10-08T10:08:06 IST" name="validateJobApplicationRedirection" description="TC053 - Validate Apply action redirects the user to the job application page" finished-at="2026-10-08T10:08:20 IST" duration-ms="14458" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateJobApplicationRedirection -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.AboutUsTest@702657cc]" started-at="2026-10-06T09:41:05 IST" name="afterMethod" finished-at="2026-10-06T09:41:06 IST" duration-ms="680" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.AboutUsTest@702657cc]" started-at="2026-10-06T09:41:06 IST" name="beforeMethod" finished-at="2026-10-06T09:41:18 IST" duration-ms="12018" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="validateContactInformation()[pri:8, instance:tests.AboutUsTest@702657cc]" started-at="2026-10-06T09:41:18 IST" name="validateContactInformation" description="TC054 - Validate contact information including email, phone number, and address is displayed" finished-at="2026-10-06T09:41:22 IST" duration-ms="3923" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateContactInformation -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.AboutUsTest@702657cc]" started-at="2026-10-06T09:41:22 IST" name="afterMethod" finished-at="2026-10-06T09:41:23 IST" duration-ms="702" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.AboutUsTest@702657cc]" started-at="2026-10-06T09:41:23 IST" name="beforeMethod" finished-at="2026-10-06T09:41:34 IST" duration-ms="11256" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="validateEmailLink()[pri:9, instance:tests.AboutUsTest@702657cc]" started-at="2026-10-06T09:41:34 IST" name="validateEmailLink" description="TC055 - Validate email link is visible and accessible to the user" finished-at="2026-10-06T09:41:39 IST" duration-ms="4329" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateEmailLink -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.AboutUsTest@702657cc]" started-at="2026-10-06T09:41:39 IST" name="afterMethod" finished-at="2026-10-06T09:41:40 IST" duration-ms="623" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.AboutUsTest@702657cc]" started-at="2026-10-06T09:41:40 IST" name="beforeMethod" finished-at="2026-10-06T09:41:53 IST" duration-ms="13573" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="validateSocialMediaLinks()[pri:10, instance:tests.AboutUsTest@702657cc]" started-at="2026-10-06T09:41:53 IST" name="validateSocialMediaLinks" description="TC056 - Validate social media links redirect users to official platform pages" finished-at="2026-10-06T09:41:57 IST" duration-ms="3479" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateSocialMediaLinks -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.AboutUsTest@702657cc]" started-at="2026-10-06T09:41:57 IST" name="afterMethod" finished-at="2026-10-06T09:41:58 IST" duration-ms="578" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.AboutUsTest@292b08d6]" started-at="2026-10-08T10:08:20 IST" name="afterMethod" finished-at="2026-10-08T10:08:21 IST" duration-ms="836" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->

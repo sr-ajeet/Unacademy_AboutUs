@@ -7,7 +7,7 @@
         <methods>
           <include name="beforeMethod"/>
           <include name="afterMethod"/>
-          <include name="validateAboutUsPerformance"/>
+          <include name="validateJobApplicationRedirection"/>
         </methods>
       </class> <!-- tests.AboutUsTest -->
     </classes>
