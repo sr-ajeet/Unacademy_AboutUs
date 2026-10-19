@@ -216,7 +216,11 @@ public class AboutUsTest extends BaseTest {
                 "Click Open Jobs button");
 
         aboutPage.clickgetAllOpenings();
-<<<<<<< HEAD
+        
+        ExtentTestNGListener.logStep(
+                "Click View And Apply button");
+
+        aboutPage.clickViewAndApply();
 
         ExtentTestNGListener.logStep(
                 "Verify job application page redirection");
@@ -227,9 +231,6 @@ public class AboutUsTest extends BaseTest {
 
         ExtentTestNGListener.logPassStep(
                 "Job application redirection validated successfully");
-=======
-        aboutPage.clickViewAndApply();
->>>>>>> branch 'master' of https://github.com/sr-ajeet/Unacademy_AboutUs.git
     }
 
     @Test(priority = 8,

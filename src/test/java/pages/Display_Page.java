@@ -18,12 +18,9 @@ public class Display_Page {
     By seeopenings = By.linkText("View all job openings");
     By getopenings = By.xpath("//a[contains(@class,'open-jobs-btn')]");
     By apply = By.xpath("//*[contains(.,'Open jobs available')]");
-<<<<<<< HEAD
-=======
     
     By viewAndApply = By.xpath("(//a[contains(@data-testid,'view-and-apply-btn')])[1]");
-
->>>>>>> branch 'master' of https://github.com/sr-ajeet/Unacademy_AboutUs.git
+    
     By contact = By.xpath("//*[contains(.,'Contact')]");
     By email = By.xpath("//a[contains(@href,'mailto:')]");
     By facebook = By.xpath("//a[contains(@href,'facebook')]");
