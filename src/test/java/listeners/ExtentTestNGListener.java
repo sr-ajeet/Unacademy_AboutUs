@@ -20,10 +20,10 @@ public class ExtentTestNGListener implements ITestListener {
     private static final ExtentReports extent =
             ExtentManager.getinstance();
 
-    private final ThreadLocal<ExtentTest> test =
+    private static ThreadLocal<ExtentTest> test =
             new ThreadLocal<>();
 
-    public ExtentTest getCurrentTest() {
+    public static ExtentTest getCurrentTest() {
         return test.get();
     }
 
@@ -40,15 +40,13 @@ public class ExtentTestNGListener implements ITestListener {
 
         test.set(extentTest);
 
-        log(Status.INFO,
-                "Execution Started");
+        test.get().info("Execution Started");
     }
 
     @Override
     public void onTestSuccess(ITestResult result) {
 
-        log(Status.PASS,
-                "Test Passed Successfully");
+        test.get().pass("Test Passed Successfully");
 
         attachScreenshot(result, "PASS");
     }
@@ -56,11 +54,9 @@ public class ExtentTestNGListener implements ITestListener {
     @Override
     public void onTestFailure(ITestResult result) {
 
-        log(Status.FAIL,
-                "Test Failed");
+        test.get().fail("Test Failed");
 
         if (result.getThrowable() != null) {
-
             test.get().fail(result.getThrowable());
         }
 
@@ -70,13 +66,19 @@ public class ExtentTestNGListener implements ITestListener {
     @Override
     public void onTestSkipped(ITestResult result) {
 
-        log(Status.SKIP,
-                "Test Skipped");
+        test.get().skip("Test Skipped");
 
         if (result.getThrowable() != null) {
-
             test.get().skip(result.getThrowable());
         }
+    }
+
+    @Override
+    public void onStart(ITestContext context) {
+
+        System.out.println(
+                "Starting Test Suite : "
+                        + context.getName());
     }
 
     @Override
@@ -88,13 +90,12 @@ public class ExtentTestNGListener implements ITestListener {
                 "Extent Report Generated Successfully");
     }
 
-    private void log(Status status,
-                     String message) {
+    @Override
+    public void onTestFailedButWithinSuccessPercentage(
+            ITestResult result) {
 
-        if (test.get() != null) {
-
-            test.get().log(status, message);
-        }
+        test.get().warning(
+                "Test Failed But Within Success Percentage");
     }
 
     private void attachScreenshot(
@@ -103,11 +104,9 @@ public class ExtentTestNGListener implements ITestListener {
 
         try {
 
-            WebDriver driver =
-                    getDriver(result);
+            WebDriver driver = getDriver(result);
 
             if (driver == null) {
-
                 return;
             }
 
@@ -115,19 +114,21 @@ public class ExtentTestNGListener implements ITestListener {
                     ScreenshotUtility.capture(
                             driver,
                             result.getMethod()
-                            .getMethodName()
-                            + "_"
-                            + status);
+                                    .getMethodName()
+                                    + "_"
+                                    + status);
 
             test.get()
-                .addScreenCaptureFromPath(
-                        path,
-                        status + " Screenshot");
+                    .addScreenCaptureFromPath(
+                            path,
+                            status + " Screenshot");
 
         } catch (IOException e) {
 
             test.get()
-                .warning(e.getMessage());
+                    .warning(
+                            "Unable To Attach Screenshot : "
+                                    + e.getMessage());
         }
     }
 
@@ -144,5 +145,99 @@ public class ExtentTestNGListener implements ITestListener {
         }
 
         return null;
+    }
+
+    /**
+     * Log execution steps in Extent Report
+     */
+    public static void logStep(String message) {
+
+        ExtentTest currentTest =
+                test.get();
+
+        if (currentTest != null) {
+
+            currentTest.info(
+                    "STEP : " + message);
+        }
+    }
+
+    /**
+     * Log Pass Step
+     */
+    public static void logPassStep(
+            String message) {
+
+        ExtentTest currentTest =
+                test.get();
+
+        if (currentTest != null) {
+
+            currentTest.pass(
+                    "PASS : " + message);
+        }
+    }
+
+    /**
+     * Log Fail Step
+     */
+    public static void logFailStep(
+            String message) {
+
+        ExtentTest currentTest =
+                test.get();
+
+        if (currentTest != null) {
+
+            currentTest.fail(
+                    "FAIL : " + message);
+        }
+    }
+
+    /**
+     * Log Warning Step
+     */
+    public static void logWarningStep(
+            String message) {
+
+        ExtentTest currentTest =
+                test.get();
+
+        if (currentTest != null) {
+
+            currentTest.warning(
+                    "WARNING : " + message);
+        }
+    }
+
+    /**
+     * Generic Log Method
+     */
+    public static void log(
+            Status status,
+            String message) {
+
+        ExtentTest currentTest =
+                test.get();
+
+        if (currentTest != null) {
+
+            currentTest.log(
+                    status,
+                    message);
+        }
+    }
+    
+    public static void logStep1 (String message) {
+
+        System.out.println("STEP => " + message);
+
+        ExtentTest currentTest =
+                test.get();
+
+        if (currentTest != null) {
+            currentTest.info(
+                    "STEP : " + message);
+        }
     }
 }
