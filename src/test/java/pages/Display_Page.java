@@ -18,6 +18,12 @@ public class Display_Page {
     By seeopenings = By.linkText("View all job openings");
     By getopenings = By.xpath("//a[contains(@class,'open-jobs-btn')]");
     By apply = By.xpath("//*[contains(.,'Open jobs available')]");
+<<<<<<< HEAD
+=======
+    
+    By viewAndApply = By.xpath("(//a[contains(@data-testid,'view-and-apply-btn')])[1]");
+
+>>>>>>> branch 'master' of https://github.com/sr-ajeet/Unacademy_AboutUs.git
     By contact = By.xpath("//*[contains(.,'Contact')]");
     By email = By.xpath("//a[contains(@href,'mailto:')]");
     By facebook = By.xpath("//a[contains(@href,'facebook')]");
@@ -95,6 +101,26 @@ public class Display_Page {
     public boolean areJobsdisplayed() {
         return driver.findElement(apply).isDisplayed();
     }
+    
+    public void clickViewAndApply() {
+
+        WebElement element = driver.findElement(viewAndApply);
+
+        ((JavascriptExecutor) driver)
+                .executeScript(
+                        "arguments[0].scrollIntoView({block:'center'});",
+                        element);
+
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        ((JavascriptExecutor) driver)
+                .executeScript("arguments[0].click();", element);
+    }
+    
 
     public boolean contactinfodisplayed() {
         return driver.findElement(contact).isDisplayed();
